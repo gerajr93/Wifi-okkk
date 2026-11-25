@@ -20,8 +20,7 @@ jobs:
           gradle-version: 8.5
 
       - name: Descomprimir proyecto
-        run: unzip -q WifiKeepAlive.zip
-
+        run: unzip -q ./*.zip
       - name: Compilar APK
         working-directory: WifiKeepAlive
         run: gradle assembleDebug
